@@ -1,0 +1,39 @@
+
+
+$color-bg: #121722;
+$color-border: #ffffff33;
+
+$color-box-bg:#1D2732;
+$color-box-border: #374151;
+$color-box-bg-hover: #06111f;
+$color-box-border-hover: #0c627f;
+
+$color-text: #fff;
+$font-size-default: 1.6rem;
+
+$border-radius-default: 1rem;
+$box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+$max-width: 128rem;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 2;
+}
+
+.page {
+  position: relative; 
+}
+
+.padding-container {
+  padding: 0 6rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: $max-width;
+}
