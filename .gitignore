@@ -6,3 +6,6 @@ dist
 
 # api keys
 .env
+
+# Local Netlify folder
+.netlify
