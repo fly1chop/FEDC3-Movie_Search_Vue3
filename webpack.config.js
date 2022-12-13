@@ -2,7 +2,6 @@ const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
 const HTMLPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   resolve: {
@@ -34,10 +33,7 @@ module.exports = {
               postcssOptions: {
                 plugins: [
                   [
-                    'autoprefixer',
-                    {
-                      // Options
-                    },
+                    'autoprefixer'
                   ],
                 ],
               },
@@ -62,10 +58,10 @@ module.exports = {
       patterns: [
         { from: 'static' }
       ]
-    }),
-    new Dotenv()
+    })
   ],
   devServer: {
+    port: 8079,
     historyApiFallback: true
   }
 }
